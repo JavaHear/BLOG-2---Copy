@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">Postlarni ko'rish</a>
+        </p>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+        {% block title %}
+            Javokhir Dev
+        {% endblock title %}
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="{% static "css/style.css" %}" >
+
+    <link rel="icon" href="media/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="top">
+  <img class="top-cloud" src="media/images/cloud.png" alt="cloud-img">
+  <h1>I am Javokhir </h1>
+  <p>Fullstack Developer programmer</p>
+  </div>
+   <img class="bottom-cloud" src="media/images/cloud.png" alt="cloud-img">
+    
+<br>
+<div class="middle-container">
+  <div class="profile">
+    <img class="myphoto" src="media/images/Senator.png" alt="my photo">
+    <h2>Hello.</h2>
+    <p class="intro">I am Backend Developer  I am founder of <b>J7</b> groups and I ❤️ Coffee </p>
+  </div>
+  <hr>
+  <div class="skills">
+    <h2>My Skills.</h2>
+    <div class="skill-row">
+      <img class="web" src=  media/images/web.png alt="photo">
+      <h3>Development</h3>
+      <p> I started 23 years old. In the days i was interesing in Web Development That is   why I applied in South Korea</p>
+    </div>
+    <div class="skill-row">
+     <img class="chilles" src="media/images/chillies.png" alt="">
+      <h3>Hot wings challange</h3>
+      <p>My best skill is eating hot wing. I am undeputed king of eating hot wing.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="contact-me">
+    <h2>Get In Touch</h2>
+    <h3>If you want to challange me to typing pr eating hot wing..</h3>
+    <p class="contact-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur laboriosam hic, cum doloribus !</p>
+    <a class="btn" href="mailto:jtursunboev@bk.ru">CONTACT ME</a>
+  </div>
+</div>
+
+
+<div class="bottom-container">
+  <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+  <a class="footer-link" href="https://twitter.com/">Twitter</a>
+  <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+  <p class="copyright">© 2022 Javokhir Developer </p>
+</div>
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</html>
+{% endblock content %}
